@@ -12,7 +12,7 @@ body {
 .switch-container {
     width: 7.75rem;
     position: relative;
-    left: 3rem;
+    left: 0;
     top: 10rem;
 }
 
@@ -114,5 +114,9 @@ img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+
+    .switch-container {
+        left: 10rem;
     }
 }

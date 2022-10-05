@@ -11,9 +11,9 @@ body {
 
 .sign-in-container {
     position: relative;
-    top: 5rem;
+    top: 4rem;
     margin: 0 auto;
-    width: 25rem;
+    width: 20rem;
     height: 15rem;
 }
 
@@ -23,7 +23,6 @@ h2 {
 
 .icon {
     background: rgb(239, 236, 236);
-
     width: 5rem;
     height: 5rem;
     font-size: 3rem;
@@ -72,7 +71,6 @@ button:hover {
     display: none;
     position: absolute;
     min-width: 100%;
-
     z-index: 1;
     top: 0;
     margin: 0 auto;
@@ -87,8 +85,8 @@ img {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 25rem;
-    height: 35rem;
+    width: 20rem;
+    height: 25rem;
     border-radius: 20px;
 }
 
