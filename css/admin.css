@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.switch-container {
+    width: 7.75rem;
+    position: relative;
+    left: 3rem;
+    top: 10rem;
+}
+
+i.table {
+    position: relative;
+    padding-right: 3px;
+    left: -4px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+i.cards {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.switch-container i {
+    font-size: 2rem;
+    padding: 0.3rem 0.2rem;
+    border: 3px solid rgb(118, 174, 248);
+    width: 3.5rem;
+    height: 3rem;
+    color: rgb(118, 174, 248);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+i.selected {
+    background: rgb(118, 174, 248);
+    color: white;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+.admin-logout-btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 800;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    transition: 0.75s;
+    cursor: pointer;
+}
+
+.admin-logout-btn:hover {
+    background: white;
+    border: 2px solid red;
+    transform: scaleX(1.2);
+}
+
+.admin-logout-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.admin-logout-btn a:hover {
+    color: red;
+}
+
+select {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.users-container {
+    width: 30rem;
+    margin: 3rem auto;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+
+th {
+    background: rgb(161, 161, 248);
+    padding: 1rem;
+}
+
+td {
+    background-color: rgb(206, 206, 249);
+    padding: 1rem;
+}
+
+.users-container div,
+img {
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 686px) {
+    .users-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- font awesome -->
+        <script
+            src="https://kit.fontawesome.com/1cf5f9e0b4.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Safe content</title>
+    </head>
+    <body>
+        <!-- secret content visibility hidden -->
+        <section class="user-content">
+            <h1>Welcome <span>user</span>!</h1>
+            <div class="img container">
+                <img src="./images/secret.webp" alt="secret" />
+            </div>
+            <div class="btn-container">
+                <button class="admin-btn">
+                    <a href="admin.html">ADMIN</a>
+                </button>
+                <button class="logout-btn" onclick="onLogOut()">Logout</button>
+            </div>
+        </section>
+        <section class="sign-in-container">
+            <h2>sign in!</h2>
+            <div class="icon"><i class="fa-solid fa-user-secret"></i></div>
+            <div class="form-container">
+                <form onsubmit="onLogin(event)">
+                    <p>Username</p>
+                    <input
+                        type="text"
+                        placeholder="Enter Username"
+                        name="username"
+                    />
+                    <p>Password</p>
+                    <input
+                        type="password"
+                        placeholder="Enter Password"
+                        name="password"
+                    />
+                    <br />
+                    <button>Login</button>
+                </form>
+            </div>
+        </section>
+        <script src="js/services/storage.service.js"></script>
+        <script src="js/services/safe-content.service.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
